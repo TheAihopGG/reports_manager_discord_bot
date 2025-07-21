@@ -16,6 +16,12 @@ For everyone
 
 It sends a modal where user should enter report text message and after it creates ticket channel in configurable category. Bot must adds in ticket channel interaction author and send buttons to interact with report.
 
+### reports list
+
+For reports admins
+
+It sends list of opened reports on this server.
+
 ### close report
 
 For reports admins
