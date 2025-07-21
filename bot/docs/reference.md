@@ -2,6 +2,12 @@
 
 ## Commands
 
+### setup
+
+For guild admins
+
+Setups guild, creates configs rows in db.
+
 ### add reports admin `member:Member`
 
 For guild admins
