@@ -1,8 +1,8 @@
 from sqlalchemy.orm import DeclarativeBase
 
 
-class Base(DeclarativeBase):
+class BaseModel(DeclarativeBase):
     pass
 
 
-__all__ = ("Base",)
+__all__ = ("BaseModel",)

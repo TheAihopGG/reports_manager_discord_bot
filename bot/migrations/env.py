@@ -7,7 +7,7 @@ from sqlalchemy.ext.asyncio import async_engine_from_config
 
 from alembic import context
 from bot.core.configuration import PROD_SQLALCHEMY_URL, DEV_SQLALCHEMY_URL, IS_DEV_MODE
-from bot.core.models import Base
+from bot.core.models import BaseModel
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -18,7 +18,7 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
-target_metadata = Base.metadata
+target_metadata = BaseModel.metadata
 
 config.set_main_option("sqlalchemy.url", DEV_SQLALCHEMY_URL if IS_DEV_MODE else PROD_SQLALCHEMY_URL)
 
