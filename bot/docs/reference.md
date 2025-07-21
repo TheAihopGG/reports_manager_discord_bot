@@ -8,13 +8,13 @@ For guild admins
 
 Setups guild, creates configs rows in db.
 
-### add reports admin `member:Member`
+### add reports admin role `role:Role`
 
 For guild admins
 
-It gives the reports admins role to the member.
+### remove reports admin role `role:Role`
 
-### remove reports admin `member:Member`
+For guild admins
 
 ### send report `member:Member`
 
