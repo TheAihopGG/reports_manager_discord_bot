@@ -4,10 +4,10 @@ from .base import BaseModel
 from .mixins import IDMixin, GuildIDMixin
 
 
-class ReportsAdminModel(
+class ReportsAdminRoleModel(
     BaseModel,
     IDMixin,
     GuildIDMixin,
 ):
     __tablename__ = "reports_admins"
-    admin_id: Mapped[int] = mapped_column(nullable=False, unique=True)
+    role_id: Mapped[int] = mapped_column(nullable=False, unique=True)
