@@ -20,7 +20,7 @@ IS_DEV_MODE = True
 LOGGING_FILENAME = BASE_DIR / "bot/logs/logs.log"
 LOGGING_FILEMODE: Literal["w", "a"] = "w"
 
-PROD_SQLALCHEMY_URL = f"aiosqlite+sqlite:///./bot/databases/prod_database.db"
-DEV_SQLALCHEMY_URL = f"aiosqlite+sqlite:///./bot/databases/dev_database.db"
+PROD_SQLALCHEMY_URL = f"sqlite+aiosqlite:///./bot/databases/prod_database.db"
+DEV_SQLALCHEMY_URL = f"sqlite+aiosqlite:///./bot/databases/dev_database.db"
 
 BOT_TOKEN = getenv("BOT_TOKEN")
