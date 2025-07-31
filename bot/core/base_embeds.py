@@ -14,7 +14,6 @@ class ErrorEmbed(Embed):
         description=None,
         url=None,
         timestamp=datetime.now(),
-        colour=...,
     ):
         super().__init__(
             title=":red_circle: Information",
@@ -22,7 +21,6 @@ class ErrorEmbed(Embed):
             description=description,
             url=url,
             timestamp=timestamp,
-            colour=colour,
             color=Color.red(),
         )
 
@@ -35,7 +33,6 @@ class SuccessEmbed(Embed):
         description=None,
         url=None,
         timestamp=datetime.now(),
-        colour=...,
     ):
         super().__init__(
             title=":green_circle: Success",
@@ -43,7 +40,6 @@ class SuccessEmbed(Embed):
             description=description,
             url=url,
             timestamp=timestamp,
-            colour=colour,
             color=Color.green(),
         )
 
@@ -56,7 +52,6 @@ class WarningEmbed(Embed):
         description=None,
         url=None,
         timestamp=datetime.now(),
-        colour=...,
     ):
         super().__init__(
             title=":yellow_circle: Warning",
@@ -64,7 +59,6 @@ class WarningEmbed(Embed):
             description=description,
             url=url,
             timestamp=timestamp,
-            colour=colour,
             color=Color.yellow,
         )
 
@@ -77,7 +71,6 @@ class InfoEmbed(Embed):
         description=None,
         url=None,
         timestamp=datetime.now(),
-        colour=...,
     ):
         super().__init__(
             title=":blue_circle: Information",
@@ -85,7 +78,6 @@ class InfoEmbed(Embed):
             description=description,
             url=url,
             timestamp=timestamp,
-            colour=colour,
             color=Color.blue(),
         )
 
